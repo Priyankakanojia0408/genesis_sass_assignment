@@ -1,0 +1,38 @@
+header {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #000;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+
+      a {
+        color: #333;
+        font-weight: 500;
+
+        &.active {
+          color: #007bff; // highlight active link
+        }
+
+        &:hover {
+          color: #007bff;
+        }
+      }
+    }
+  }
+}

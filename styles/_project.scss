@@ -1,0 +1,51 @@
+.project-details {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr; // main text + sidebar
+  gap: 2rem;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-meta {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+
+    p {
+      margin: 0.5rem 0;
+
+      strong {
+        color: #000;
+      }
+    }
+  }
+
+  .project-images {
+    grid-column: 1 / -1; // make it full width
+    margin-top: 2rem;
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+  .project-details {
+    grid-template-columns: 1fr; // stack on small screens
+  }
+}
+    }
+    }
