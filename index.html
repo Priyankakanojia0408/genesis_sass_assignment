@@ -8,27 +8,40 @@
 </head>
 <body>
   <!-- Header -->
-  <header>
-    <nav>
-      <a href="index.html" class="logo">Genesis</a>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="project.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- HEADER (logo left, nav right) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="branding">
+        <img src="images/Logo.png" alt="logo" class="logo">
+      </div>
+
+
+    <!--navigation bar-->
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="is-active">Home</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- Main Content -->
-  <main>
-    <section class="intro">
-      <h2>Hello, I'm Bakhtiyar Sattarov, product designer with experience in studios and startups</h2>
-      <p><a href="#">Showing Work</a></p>
+    <section class="intro container">
+      <div class="intro-left">
+        <p class="subtitle"> Shooting Stars</p>
+          <h1>Hello, I'm <strong>Bakhtiyar Sattarov</strong>, <span class="accent">product designer</span> with experience in studios and startups</h1>
+          <p class="work-link"><a href="project.html">Showing Work</a></p>
+      </div>
+
+      <div class="intro-left">
+        <p class="tagline"> Design is about progress </p>
+      </div>
     </section>
 
-    <section class="gallery">
+    <section class=" portfolio-grid gallery">
       <!-- Images go here -->
-      <div class="grid">
         <img src="images/Rectangle1.png" alt="Work 1">
         <img src="images/Rectangle2.png" alt="Work 2">
         <img src="images/Rectangle3.png" alt="Work 3">
@@ -41,14 +54,89 @@
         <img src="images/Rectangle10.png" alt="Work 10">
         <img src="images/Rectangle11.png" alt="Work 11">
         <img src="images/Rectangle12.png" alt="Work 12">
-        
-      </div>
     </section>
-  </main>
-
+  
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Genesis Portfolio</p>
-  </footer>
+    <!-- FOOTER / INFO SECTION (below the grid) -->
+<section class="footer-info">
+
+  <!-- top row: lead text + services list -->
+  <div class="footer-top container">
+    <p class="lead">
+      We love work hard and explore new things — that's why we cover a lot of things.
+      Check our service list and view details
+    </p>
+
+    <ul class="services">
+      <li>Multimedia</li>
+      <li>Interactive Design</li>
+      <li>Branding</li>
+      <li>Creative design</li>
+      <li>Packaging</li>
+      <li>Coding</li>
+    </ul>
+  </div>
+
+  <!-- awards box: each .award contains two rows of award entries -->
+  <div class="awards container">
+
+     <!-- AWARD: brand left, then two rows (type / project / year) -->
+        <div class="award">
+          <div class="brand">Awwwards</div>
+          <div class="type">Site of the day</div>
+          <div class="project">
+            <div class="name">Genesis UI Kit</div>
+            <div class="desc">Application that helps to find nearest sport centres</div>
+        </div>
+        <div class="year">2018</div>
+
+        <div class="type">Best navigation</div>
+        <div class="project">
+          <div class="name">Genesis Template</div>
+          <div class="desc">Application that helps to find nearest sport centres</div>
+        </div>
+        <div class="year">2018</div>
+      
+  <!-- CSSDesignAwards -->
+        <div class="award">
+          <div class="brand" rowspan="2">CSSDesignAwards</div>
+          <div class="type">Site of the day</div>
+          <div class="project">
+            <div class="name">Genesis UI Kit</div>
+            <div class="desc">Application that helps to find nearest sport centres</div>
+          </div>
+          <div class="year">2017</div>
+
+        <div class="type">Best navigation</div>
+          <div class="project">
+            <div class="name">Genesis Template</div>
+            <div class="desc">Application that helps to find nearest sport centres</div>
+          </div>
+          <div class="year">2016</div>
+        </div>
+        </div>
+      </div>
+
+
+  <!-- bottom footer row -->
+  <div class=" container site-bottom">
+    <div class="brand-name">Genesis</div>
+
+    <nav class="footer-nav">
+      <a href="project.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <ul class="social">
+      <li class="icon">○</li>
+      <li class="icon">○</li>
+      <li class="icon">○</li>
+    </ul>
+  </div>
+
+</section>
+      <p>&copy; 2025 Genesis Portfolio</p>
+      </footer>
 </body>
 </html>

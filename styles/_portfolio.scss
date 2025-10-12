@@ -1,0 +1,18 @@
+.portfolio-grid {
+  column-count: 3;
+  column-gap: $gap;
+  padding: 1rem 0 2rem;
+
+  img {
+    width: 100%;
+    display: block;
+    margin: 0 0 $gap;
+    border-radius: 6px;
+    object-fit:fill;
+    break-inside: avoid; /* prevents image splitting between columns */
+  }
+}
+
+/* responsive — reduce columns */
+@media (max-width: 1000px) { .portfolio-grid { column-count: 2; } }
+@media (max-width: 600px)  { .portfolio-grid { column-count: 1; } }

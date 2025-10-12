@@ -3,6 +3,60 @@ body {
   background-color: #f2f2f2;
 }
 
+// intro section
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  background-color: #f9f9f9; // or use your Figma bg color
+
+  .intro-left {
+    flex: 1;
+    padding-right: 2rem;
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #333; // adjust from your palette
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      background: #007bff;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background: darken(#007bff, 10%);
+      }
+    }
+  }
+
+  .intro-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 1rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+  }
+}
+
+
 main {
   max-width: 1200px;
   margin: 2rem auto;
@@ -17,3 +71,70 @@ footer {
   font-size: 0.9rem;
   color: #555;
 }
+.awards {
+  border: 1px solid #e9e9e9;
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 2.5rem;
+  background: #fff;
+
+  .award {
+    display: grid;
+    grid-template-columns: 200px 1fr 2fr 80px; 
+    /* Brand | Type | Project | Year */
+    gap: 1rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .brand {
+      font-weight: 700;
+      font-size: 1rem;
+      color: #111;
+      grid-row: span 2;  // brand spans 2 award rows
+      align-self: start;
+    }
+
+    .type {
+      font-weight: 600;
+      color: #222;
+      align-self: center;
+    }
+
+    .project {
+      .name {
+        font-weight: 700;
+        margin-bottom: 0.3rem;
+        color: #111;
+      }
+      .desc {
+        font-size: 0.9rem;
+        color: #777;
+        line-height: 1.4;
+      }
+    }
+
+    .year {
+      font-weight: 600;
+      color: #777;
+      text-align: right;
+      align-self: center;
+    }
+  }
+}
+
+/* Responsive tweak */
+@media (max-width: 900px) {
+  .awards {
+    .award {
+      grid-template-columns: 1fr;
+      .brand { grid-row: auto; margin-bottom: .5rem; }
+      .year { text-align: left; }
+    }
+  }
+}
+
+
