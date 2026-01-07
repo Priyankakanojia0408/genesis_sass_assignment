@@ -3,79 +3,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Genesis Portfolio | Contact</title>
-  <link rel="stylesheet" href="styles/index.css">
+  <title>contacts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/contact.css">
 </head>
 <body>
-  <!-- Header -->
-    <header class="site-header">
-      <div class="container header-inner">
-        <div class="branding">
-          <img src="images/Logo.png" alt="logo" class="logo">
-        </div>
 
+  <body>
 
-    <!--navigation bar-->
-      <nav class="main-nav">
-        <ul>
-          <li><a href="index.html" class="is-active">Home</a></li>
-          <li><a href="project.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+<!-- HEADER -->
+<header>
+  <nav class="nav-list">
+    <div>
+      <a href="index.html">
+        <img src="images/Logo.png" alt="logo">
+      </a>
     </div>
-  </header>
 
-  <!-- Main Content -->
-  <main class="container contact-page">
-    <section class="contact-form">
-      <h2>Full set of great features to make your product fresh</h2>
-      <form class="contact-form" action="#" method="POST">
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" name="email" placeholder="Your email" required>
-        <textarea name="message" placeholder="Your message" rows="5"></textarea>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
-
-    <section class="map">
-      <img src="images/Map.png" alt="Map location">
-    </section>
-  </main>
-
- <!-- Footer -->
-  <footer>
-    <!-- bottom footer row -->
-  <div class=" container site-bottom">
-    <div class="brand-name">Genesis</div>
-
-    <nav class="footer-nav">
-      <a href="project.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-
-    <ul class="social">
-      <li class="icon">○</li>
-      <li class="icon">○</li>
-      <li class="icon">○</li>
+    <ul class="nav-list">
+      <li><a href="project.html" class="link">Projects</a></li>
+      <li><a href="contact.html" class="link">Contact</a></li>
     </ul>
-  </div>
-<!-- bottom footer row -->
-  <div class=" container site-bottom">
-    <div class="brand-name">Genesis</div>
+  </nav>
+</header>
 
-    <nav class="footer-nav">
-      <a href="project.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+<!-- MAIN -->
+<main>
 
-    <ul class="social">
-      <li class="icon">○</li>
-      <li class="icon">○</li>
-      <li class="icon">○</li>
-    </ul>
+  <!-- CONTACT SECTION -->
+  <section class="sections">
+    <div class="first-section">
+
+      <!-- LEFT TEXT -->
+      <div>
+        <p class="first-section-text">
+          Full set of great features to make your product fresh
+        </p>
+
+        <p class="margin">
+          Our favorite brands are our friends! We help them to achieve their goals,
+          they help us to stay sharp.
+        </p>
+      </div>
+
+      <!-- FORM -->
+      <div>
+        <form>
+          <div class="form">
+
+            <label for="name">NAME</label>
+            <input type="text" id="name" class="input-field">
+
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" class="input-field" required>
+
+            <label for="message">MESSAGE</label>
+            <input type="text" id="message" class="input-field">
+
+            <button type="submit">Submit</button>
+
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+ 
+  <!-- MAP -->
+  <section class="sections map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24177.92141438049!2d-74.006015!3d40.712728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a3162a2b631%3A0x91dbb0b8b9b4b4f6!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1700000000000"
+      width="1100"
+      height="570"
+      style="border:0;"
+      loading="lazy">
+    </iframe>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <a href="index.html">
+    <img src="images/Logo.png" alt="logo">
+  </a>
+
+  <div class="footer">
+    <a href="project.html" class="link">Projects</a>
+    <a href="contact.html" class="link">Contact</a>
   </div>
-      <p>&copy; 2025 Genesis Portfolio</p>
-      </footer>
+
+  <div>
+    <i class="fab fa-linkedin"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fab fa-twitter"></i>
+  </div>
+</footer>
+
 </body>
 </html>
+

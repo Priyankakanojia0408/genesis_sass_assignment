@@ -1,35 +1,17 @@
-.site-header {
-  background: transparent;
-  .header-inner {
+
+
+.nav-list{
+    
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.25rem 0;
-  }
-
-  .branding .logo {
-    height: 30px;
-    display: block;
-  }
-
-  .main-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1.4rem;
-    margin: 0;
-    padding: 0;
-
-    a {
-      color: $primary;
-      font-weight: 600;
-      text-decoration: none;
-      &.is-active { color: $accent; }
-    }
-  }
+    justify-content: space-between; 
+    align-items: center; 
+    list-style-type: none; 
+    gap: 30px; 
 }
 
-/* responsive: simple stack on mobile */
-@media (max-width: 700px) {
-  .header-inner { flex-direction: column; gap: 0.75rem; }
-  .main-nav ul { flex-wrap: wrap; justify-content: center; }
+
+.link{
+    text-decoration: none;
+    font-weight: bold;
+    color: black
 }

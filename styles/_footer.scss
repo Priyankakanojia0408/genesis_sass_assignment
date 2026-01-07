@@ -1,2 +1,16 @@
-/* small global footer spacing if needed */
-footer { padding: 2rem 0; text-align: center; color: $muted; }
+footer{
+    margin-top: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footer{
+    display: flex;
+    margin-left: 550px;
+    gap:40px;
+}
+
+
